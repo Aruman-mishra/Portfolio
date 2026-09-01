@@ -41,7 +41,12 @@ export default function ProjectCard(props: ProjectCardProps) {
         <div className="flex items-center gap-3">
           {props.favicon && (
             <span className="relative h-6 w-6 shrink-0">
-              <Image src={`${router.basePath}${props.favicon}`} alt="logo" fill className="rounded" />
+              <Image
+                src={`${router.basePath}${props.favicon}`}
+                alt="logo"
+                fill
+                className="rounded"
+              />
             </span>
           )}
           <h3 className="text-lg font-semibold text-accent">{props.name}</h3>
